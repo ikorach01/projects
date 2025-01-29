@@ -9,6 +9,8 @@ void main() {
 }
 
 class AccountTypeSelectionScreen extends StatelessWidget {
+  const AccountTypeSelectionScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -101,7 +103,8 @@ class AccountTypeSelectionScreen extends StatelessWidget {
                     height: 13,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4.30),
-                      border: Border.all(width: 1, color: Colors.black.withOpacity(0.35)),
+                      border: Border.all(
+                          width: 1, color: Colors.black.withOpacity(0.35)),
                     ),
                     child: Center(
                       child: Container(
@@ -130,6 +133,7 @@ class AccountButton extends StatelessWidget {
   final Color textColor;
 
   const AccountButton({
+    super.key,
     required this.text,
     required this.backgroundColor,
     required this.textColor,
